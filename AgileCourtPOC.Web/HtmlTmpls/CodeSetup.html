@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="../Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="../Content/toastr.min.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../Scripts/DataTables/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../Scripts/CodeSetup.js" type="text/javascript"></script>    
+    <script src="../Scripts/moment.js" type="text/javascript"></script>
+    <script src="../Scripts/toastr.js" type="text/javascript"></script>
+    
+</head>
+
+<body style="margin-top: 100px;margin-left:50px;">
+    <div class="row" >
+        <div class="col-md-5 row" id="divCodeGroup">
+            <div class="col-md-3"><b>Group Code</b>&nbsp;<span class="mandatoryfield">*</span></div>
+            <div class="col-md-9">
+                <select name="codeGroup" id="selectCodeGroup" class="form-control brdr-clr" tabindex="1" >
+                    <option value=''>-- Select --</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-9">
+                <p ng-show="codeGrouprequired" class="help-block errmsg"></p>
+            </div>
+           
+        </div>
+        <div class="col-md-5 row" id="divCodeType">
+            <div class="col-md-3"> <b>Code Type</b>&nbsp;<span class="mandatoryfield">*</span></div>
+            <div class="col-md-9">
+                <select name="codeType" id="selectCodeType" class="form-control brdr-clr" tabindex="2">
+                    <option value=''>-- Select --</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-9">
+                <p ng-show="codeTyperequired" class="help-block errmsg"></p>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+
+    <div class="row"  style="padding-bottom:10px;">
+
+        <div class="col-md-5 row">
+            <div class="col-md-3">
+                <b>Code</b>&nbsp;<span class="mandatoryfield">*</span>
+            </div>
+            <div class="col-md-9">
+                <input id="txtCode" class="text-primary" />
+            </div>
+        </div>
+        <div class="col-md-5 row">
+            <div class="col-md-3">
+                <b>Description</b>&nbsp;<span class="mandatoryfield">*</span>
+            </div>
+            <div class="col-md-9">
+                <input id="txtDescription" class="text-primary" />
+            </div>
+        </div>
+       
+    </div>
+
+    
+    <div class="row" style="padding-bottom:10px;">
+        <div class="col-md-5 row">
+            <div class="col-md-3">
+                <b>Effective from</b>&nbsp;<span class="mandatoryfield">*</span>
+            </div>
+            <div class="col-md-9">
+                <input id="txtEffectiveFrom" class="text-primary" />
+            </div>
+        </div>
+        <div class="col-md-5 row">
+            <div class="col-md-3">
+                <b>Effective To</b>&nbsp;<span class="mandatoryfield">*</span>
+            </div>
+            <div class="col-md-9">
+                <input id="txtEffectiveTo" class="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:20px;">
+
+        <div class="col-md-9 col-md-offset-6">
+            <input type="button" class="btn-primary" id="btnSave" value="Save" />
+            <input type="button" class="btn-primary" id="btnCancel" value="Cancel" />
+        </div>
+
+
+    </div>
+
+    
+        
+    <table id="validationCodes" class="table-bordered" style="width:90%;">
+
+        
+
+    </table>
+
+
+
+
+  
+
+
+ 
+
+
+</body>
+</html>
